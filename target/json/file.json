@@ -1,0 +1,99 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Search a product",
+        "description": "",
+        "id": "search-functionality;search-a-product",
+        "after": [
+          {
+            "result": {
+              "duration": 685479100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SearchStepDefs.CleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18103195100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have browser opened and url is navigated",
+            "match": {
+              "location": "SearchStepDefs.i_have_browser_opened_and_url_is_navigated()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6551787900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search for product \"Dell\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell\"",
+                  "offset": 21
+                }
+              ],
+              "location": "SearchStepDefs.i_search_for_product(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1260537400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "product list should appear pertaining to the product search as \"Dell\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Dell\"",
+                  "offset": 63
+                }
+              ],
+              "location": "SearchStepDefs.product_list_should_appear_pertaining_to_the_product_search_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag"
+          },
+          {
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Search functionality",
+    "description": "",
+    "id": "search-functionality",
+    "keyword": "Feature",
+    "uri": "features/ui/search.feature",
+    "tags": [
+      {
+        "name": "@tag",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
